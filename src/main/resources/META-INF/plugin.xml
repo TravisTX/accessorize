@@ -4,11 +4,17 @@
     <name>test-plugin</name>
     <vendor>travistx</vendor>
 
-    <depends>com.intellij.modules.platform</depends>
+<!--    <depends config-file="withRuby.xml">org.jetbrains.plugins.ruby</depends>-->
+    <depends config-file="withRuby.xml">com.intellij.modules.ruby</depends>
+
+    <!--    <depends>org.jetbrains.plugins.ruby</depends>-->
 
     <extensions defaultExtensionNs="com.intellij">
         <applicationService serviceImplementation="com.github.travistx.testplugin.services.MyApplicationService"/>
         <projectService serviceImplementation="com.github.travistx.testplugin.services.MyProjectService"/>
+<!--        <codeInsight.lineMarkerProvider-->
+<!--                language="ruby"-->
+<!--                implementationClass="com.github.travistx.testplugin.VisibilityLineMarkerProvider"/>-->
     </extensions>
 
     <applicationListeners>

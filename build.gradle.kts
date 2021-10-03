@@ -14,6 +14,8 @@ plugins {
     id("org.jetbrains.changelog") version "1.3.0"
     // Gradle Qodana Plugin
     id("org.jetbrains.qodana") version "0.1.12"
+
+//    id("org.jetbrains.plugins.ruby") version "2021.2.2"
 }
 
 group = properties("pluginGroup")
@@ -22,6 +24,11 @@ version = properties("pluginVersion")
 // Configure project's dependencies
 repositories {
     mavenCentral()
+    maven(url = "https://maven-central.storage-download.googleapis.com/repos/central/data/")
+    maven(url = "https://maven.aliyun.com/nexus/content/groups/public/")
+    maven(url = "https://repo.eclipse.org/content/groups/releases/")
+    maven(url = "https://www.jetbrains.com/intellij-repository/releases")
+    maven(url = "https://www.jetbrains.com/intellij-repository/snapshots")
 }
 
 // Configure Gradle IntelliJ Plugin - read more: https://github.com/JetBrains/gradle-intellij-plugin
