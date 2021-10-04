@@ -6,10 +6,15 @@ import com.intellij.icons.AllIcons
 import com.intellij.openapi.editor.markup.GutterIconRenderer
 import com.intellij.psi.PsiElement
 import com.intellij.util.ConstantFunction
+import com.intellij.util.IconUtil
 import org.jetbrains.plugins.ruby.ruby.lang.psi.controlStructures.methods.Visibility
 import org.jetbrains.plugins.ruby.ruby.lang.psi.impl.controlStructures.methods.RMethodImpl
+import java.awt.Color
+import javax.swing.Icon
 
 class VisibilityLineMarkerProvider : LineMarkerProvider {
+    private var icon: Icon = IconUtil.colorize(AllIcons.Diff.Lock, Color(175,175,175))
+
     override fun getLineMarkerInfo(element: PsiElement): LineMarkerInfo<*>? {
         if (element !is RMethodImpl) {
             return null;
@@ -23,7 +28,7 @@ class VisibilityLineMarkerProvider : LineMarkerProvider {
         return LineMarkerInfo(
             nameElement,
             nameElement.textRange,
-            AllIcons.Diff.Lock,
+            icon,
             ConstantFunction<PsiElement, String>("Private"),
             null,
             GutterIconRenderer.Alignment.CENTER
