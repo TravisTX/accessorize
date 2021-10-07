@@ -1,4 +1,4 @@
-package com.github.travistx.testplugin
+package com.github.travistx.accessorize
 
 import com.intellij.ide.highlighter.XmlFileType
 import com.intellij.psi.xml.XmlFile

@@ -1,4 +1,4 @@
-package com.github.travistx.testplugin
+package com.github.travistx.accessorize
 
 import com.intellij.codeInsight.daemon.LineMarkerInfo
 import com.intellij.codeInsight.daemon.LineMarkerProvider

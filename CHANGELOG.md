@@ -1,6 +1,6 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
-# test-plugin Changelog
+# Accessorize Changelog
 
 ## [Unreleased]
 ### Added
