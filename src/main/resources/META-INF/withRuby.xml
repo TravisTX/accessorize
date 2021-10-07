@@ -3,7 +3,5 @@
         <codeInsight.lineMarkerProvider
                 language="ruby"
                 implementationClass="com.github.travistx.testplugin.VisibilityLineMarkerProvider"/>
-
-<!--                <highlightVisitor implementation="com.github.travistx.testplugin.RubyVisitor"/>-->
     </extensions>
 </idea-plugin>
