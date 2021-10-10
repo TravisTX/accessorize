@@ -6,11 +6,12 @@
 
 <!-- Plugin description -->
 
-Display an icon next to protected and private Ruby methods to indicate their access level.
-
-![demo](./media/demo.png)
+Add an indication of method access levels.  
+Accessorize displays an icon next to protected and private Ruby methods to indicate their access level.
 
 <!-- Plugin description end -->
+
+![demo](./media/demo.png)
 
 ## Installation
 
