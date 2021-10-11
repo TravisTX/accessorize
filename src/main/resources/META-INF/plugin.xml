@@ -3,6 +3,10 @@
     <id>com.github.travistx.accessorize</id>
     <name>Accessorize</name>
     <vendor>travistx</vendor>
+    <description>
+        Add an indication of method access levels.
+        Accessorize displays an icon next to protected and private Ruby methods to indicate their access level.
+    </description>
 
     <depends config-file="withRuby.xml">com.intellij.modules.ruby</depends>
 </idea-plugin>
